@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña tu Pieza | ArteMadera Ebanistería</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="disena.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- BOTONES FLOTANTES -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/573001234567" class="floating-btn whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/taller_ebanisteria" class="floating-btn instagram-btn" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="tel:+573001234567" class="floating-btn phone-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo-elegante">
+                    <div class="logo-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">ARTE<span class="logo-accent">MADERA</span></span>
+                        <span class="logo-sub">Taller de Ebanistería</span>
+                    </div>
+                </a>
+
+                <div class="nav-elegante">
+                    <a href="index.html" class="nav-item">
+                        <span class="nav-text">INICIO</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="nosotros.html" class="nav-item">
+                        <span class="nav-text">NOSOTROS</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="servicios.html" class="nav-item">
+                        <span class="nav-text">SERVICIOS</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="proyectos.html" class="nav-item">
+                        <span class="nav-text">PROYECTOS</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="tienda.html" class="nav-item">
+                        <span class="nav-text">TIENDA</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="contacto.html" class="nav-item">
+                        <span class="nav-text">CONTACTO</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="disena.html" class="nav-item nav-special active">
+                        <span class="nav-text">DISEÑA TU PIEZA</span>
+                        <span class="nav-line"></span>
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu-elegante" id="mobileMenu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <i class="fas fa-tree"></i>
+                    <span>ARTEMADERA</span>
+                </div>
+                <button class="close-menu" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="mobile-nav-items">
+                <a href="index.html" class="mobile-nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>INICIO</span>
+                </a>
+                <a href="nosotros.html" class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>NOSOTROS</span>
+                </a>
+                <a href="servicios.html" class="mobile-nav-item">
+                    <i class="fas fa-tools"></i>
+                    <span>SERVICIOS</span>
+                </a>
+                <a href="proyectos.html" class="mobile-nav-item">
+                    <i class="fas fa-images"></i>
+                    <span>PROYECTOS</span>
+                </a>
+                <a href="tienda.html" class="mobile-nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>TIENDA</span>
+                </a>
+                <a href="contacto.html" class="mobile-nav-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>CONTACTO</span>
+                </a>
+                <a href="disena.html" class="mobile-nav-item mobile-special active">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <span>DISEÑA TU PIEZA</span>
+                </a>
+            </div>
+            
+            <div class="mobile-contact-info">
+                <a href="tel:+573001234567" class="mobile-phone">
+                    <i class="fas fa-phone"></i>
+                    +57 300 123 4567
+                </a>
+                <a href="https://wa.me/573001234567" class="mobile-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO DISEÑA TU PIEZA -->
+    <section class="hero-disena">
+        <div class="hero-disena-overlay"></div>
+        <div class="container">
+            <div class="hero-disena-content">
+                <h1>Diseña tu Pieza Única</h1>
+                <p>Personaliza cada detalle de tu mueble con nuestro diseñador interactivo</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Inicio</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <span class="current">Diseña tu Pieza</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISEÑADOR INTERACTIVO -->
+    <section class="disenador-interactivo">
+        <div class="container">
+            <div class="disenador-header">
+                <h2><i class="fas fa-magic"></i> Diseñador 3D Interactivo</h2>
+                <p>Visualiza en tiempo real cómo quedará tu pieza personalizada</p>
+            </div>
+
+            <div class="disenador-contenido">
+                <!-- Vista Previa 3D -->
+                <div class="vista-previa-3d">
+                    <div class="vista-3d-container">
+                        <div class="vista-3d-placeholder" id="vista3d">
+                            <div class="mueble-modelo" id="muebleModelo">
+                                <!-- Modelo 3D se actualizará aquí -->
+                                <div class="modelo-base"></div>
+                                <div class="modelo-tablero"></div>
+                                <div class="modelo-patas"></div>
+                            </div>
+                        </div>
+                        <div class="vista-3d-controls">
+                            <button class="control-3d" id="rotarIzquierda">
+                                <i class="fas fa-undo"></i>
+                            </button>
+                            <button class="control-3d" id="rotarDerecha">
+                                <i class="fas fa-redo"></i>
+                            </button>
+                            <button class="control-3d" id="zoomIn">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="control-3d" id="zoomOut">
+                                <i class="fas fa-search-minus"></i>
+                            </button>
+                            <button class="control-3d" id="resetVista">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                        <div class="vista-3d-info">
+                            <div class="info-modelo">
+                                <h4 id="nombreModelo">Mesa de Comedor Moderna</h4>
+                                <p id="descripcionModelo">Diseño contemporáneo con líneas limpias</p>
+                            </div>
+                            <div class="precio-modelo">
+                                <span class="precio-etiqueta">Precio estimado:</span>
+                                <span class="precio-valor" id="precioEstimado">$2'500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel de Personalización -->
+                <div class="panel-personalizacion">
+                    <!-- Progreso del Diseño -->
+                    <div class="progreso-diseno">
+                        <div class="paso-indicador active" data-paso="1">
+                            <span class="paso-numero">1</span>
+                            <span class="paso-texto">Tipo</span>
+                        </div>
+                        <div class="paso-indicador" data-paso="2">
+                            <span class="paso-numero">2</span>
+                            <span class="paso-texto">Madera</span>
+                        </div>
+                        <div class="paso-indicador" data-paso="3">
+                            <span class="paso-numero">3</span>
+                            <span class="paso-texto">Medidas</span>
+                        </div>
+                        <div class="paso-indicador" data-paso="4">
+                            <span class="paso-numero">4</span>
+                            <span class="paso-texto">Acabados</span>
+                        </div>
+                        <div class="paso-indicador" data-paso="5">
+                            <span class="paso-numero">5</span>
+                            <span class="paso-texto">Extras</span>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de Diseño -->
+                    <form id="formDisena" class="form-diseno">
+                        <!-- PASO 1: Tipo de Mueble -->
+                        <div class="paso-contenido active" data-paso="1">
+                            <h3><i class="fas fa-couch"></i> ¿Qué mueble quieres diseñar?</h3>
+                            <p class="paso-desc">Selecciona el tipo de mueble que necesitas</p>
+                            
+                            <div class="categorias-muebles">
+                                <div class="categoria-opcion active" data-categoria="comedor">
+                                    <div class="categoria-icono">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                    <h4>Comedor</h4>
+                                    <p>Mesas y sillas para comedor</p>
+                                </div>
+                                
+                                <div class="categoria-opcion" data-categoria="sala">
+                                    <div class="categoria-icono">
+                                        <i class="fas fa-tv"></i>
+                                    </div>
+                                    <h4>Sala</h4>
+                                    <p>Estanterías, mesas auxiliares</p>
+                                </div>
+                                
+                                <div class="categoria-opcion" data-categoria="dormitorio">
+                                    <div class="categoria-icono">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <h4>Dormitorio</h4>
+                                    <p>Camas, cómodas, mesas de noche</p>
+                                </div>
+                                
+                                <div class="categoria-opcion" data-categoria="oficina">
+                                    <div class="categoria-icono">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <h4>Oficina</h4>
+                                    <p>Escritorios, librerías</p>
+                                </div>
+                                
+                                <div class="categoria-opcion" data-categoria="cocina">
+                                    <div class="categoria-icono">
+                                        <i class="fas fa-kitchen-set"></i>
+                                    </div>
+                                    <h4>Cocina</h4>
+                                    <p>Islas, alacenas, tablas</p>
+                                </div>
+                                
+                                <div class="categoria-opcion" data-categoria="exterior">
+                                    <div class="categoria-icono">
+                                        <i class="fas fa-tree"></i>
+                                    </div>
+                                    <h4>Exterior</h4>
+                                    <p>Muebles de jardín y terraza</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Modelos específicos por categoría -->
+                            <div class="modelos-categoria active" data-categoria="comedor">
+                                <h4>Selecciona un modelo de comedor</h4>
+                                <div class="modelos-grid">
+                                    <div class="modelo-opcion active" data-modelo="mesa-moderna">
+                                        <div class="modelo-imagen">
+                                            <i class="fas fa-table"></i>
+                                        </div>
+                                        <h5>Mesa Moderna</h5>
+                                        <p>Líneas rectas, diseño contemporáneo</p>
+                                    </div>
+                                    
+                                    <div class="modelo-opcion" data-modelo="mesa-rustica">
+                                        <div class="modelo-imagen">
+                                            <i class="fas fa-tree"></i>
+                                        </div>
+                                        <h5>Mesa Rústica</h5>
+                                        <p>Madera natural, estilo campestre</p>
+                                    </div>
+                                    
+                                    <div class="modelo-opcion" data-modelo="mesa-extensible">
+                                        <div class="modelo-imagen">
+                                            <i class="fas fa-expand-alt"></i>
+                                        </div>
+                                        <h5>Mesa Extensible</h5>
+                                        <p>Se adapta a diferentes espacios</p>
+                                    </div>
+                                    
+                                    <div class="modelo-opcion" data-modelo="juego-comedor">
+                                        <div class="modelo-imagen">
+                                            <i class="fas fa-chair"></i>
+                                        </div>
+                                        <h5>Juego Completo</h5>
+                                        <p>Mesa + 6 sillas combinadas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PASO 2: Selección de Madera -->
+                        <div class="paso-contenido" data-paso="2">
+                            <h3><i class="fas fa-tree"></i> Selecciona la Madera</h3>
+                            <p class="paso-desc">Elige el tipo de madera que mejor se adapte a tu proyecto</p>
+                            
+                            <div class="maderas-grid">
+                                <div class="madera-opcion active" data-madera="roble">
+                                    <div class="madera-muestra" style="background-color: #8B5A2B;"></div>
+                                    <h4>Roble</h4>
+                                    <p class="madera-desc">Durabilidad excepcional, vetas marcadas</p>
+                                    <div class="madera-info">
+                                        <span><i class="fas fa-star"></i> Alta dureza</span>
+                                        <span><i class="fas fa-palette"></i> Tono medio</span>
+                                        <span class="madera-precio">+15%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="madera-opcion" data-madera="nogal">
+                                    <div class="madera-muestra" style="background-color: #3d2b1f;"></div>
+                                    <h4>Nogal</h4>
+                                    <p class="madera-desc">Color oscuro elegante, gran estabilidad</p>
+                                    <div class="madera-info">
+                                        <span><i class="fas fa-star"></i> Muy estable</span>
+                                        <span><i class="fas fa-palette"></i> Tono oscuro</span>
+                                        <span class="madera-precio">+25%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="madera-opcion" data-madera="cerezo">
+                                    <div class="madera-muestra" style="background-color: #B5651D;"></div>
+                                    <h4>Cerezo</h4>
+                                    <p class="madera-desc">Color rojizo cálido, fácil de trabajar</p>
+                                    <div class="madera-info">
+                                        <span><i class="fas fa-star"></i> Buena trabajabilidad</span>
+                                        <span><i class="fas fa-palette"></i> Tono cálido</span>
+                                        <span class="madera-precio">+20%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="madera-opcion" data-madera="teca">
+                                    <div class="madera-muestra" style="background-color: #A0522D;"></div>
+                                    <h4>Teca</h4>
+                                    <p class="madera-desc">Ideal para exterior, resistente a humedad</p>
+                                    <div class="madera-info">
+                                        <span><i class="fas fa-star"></i> Resistente agua</span>
+                                        <span><i class="fas fa-palette"></i> Tono dorado</span>
+                                        <span class="madera-precio">+30%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="madera-opcion" data-madera="pino">
+                                    <div class="madera-muestra" style="background-color: #DEB887;"></div>
+                                    <h4>Pino</h4>
+                                    <p class="madera-desc">Económica, ligera, buena para pintar</p>
+                                    <div class="madera-info">
+                                        <span><i class="fas fa-star"></i> Ligera</span>
+                                        <span><i class="fas fa-palette"></i> Tono claro</span>
+                                        <span class="madera-precio">Base</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="madera-opcion" data-madera="olivo">
+                                    <div class="madera-muestra" style="background-color: #808000;"></div>
+                                    <h4>Olivo</h4>
+                                    <p class="madera-desc">Vetas únicas, muy decorativa</p>
+                                    <div class="madera-info">
+                                        <span><i class="fas fa-star"></i> Decorativa</span>
+                                        <span><i class="fas fa-palette"></i> Vetas únicas</span>
+                                        <span class="madera-precio">+40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Origen de la Madera -->
+                            <div class="origen-madera">
+                                <h4><i class="fas fa-leaf"></i> Origen de la Madera</h4>
+                                <div class="origen-opciones">
+                                    <label class="origen-opcion">
+                                        <input type="radio" name="origen" value="certificado" checked>
+                                        <span class="origen-check"></span>
+                                        <span class="origen-texto">
+                                            <strong>Madera Certificada FSC</strong>
+                                            <small>Procedente de bosques sostenibles</small>
+                                        </span>
+                                        <span class="origen-precio">+10%</span>
+                                    </label>
+                                    
+                                    <label class="origen-opcion">
+                                        <input type="radio" name="origen" value="recuperada">
+                                        <span class="origen-check"></span>
+                                        <span class="origen-texto">
+                                            <strong>Madera Recuperada</strong>
+                                            <small>Reutilizada de demoliciones</small>
+                                        </span>
+                                        <span class="origen-precio">+5%</span>
+                                    </label>
+                                    
+                                    <label class="origen-opcion">
+                                        <input type="radio" name="origen" value="estandar">
+                                        <span class="origen-check"></span>
+                                        <span class="origen-texto">
+                                            <strong>Madera Estándar</strong>
+                                            <small>Procedencia local</small>
+                                        </span>
+                                        <span class="origen-precio">Sin adicional</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PASO 3: Medidas Personalizadas -->
+                        <div class="paso-contenido" data-paso="3">
+                            <h3><i class="fas fa-ruler-combined"></i> Personaliza las Medidas</h3>
+                            <p class="paso-desc">Ajusta las dimensiones según tu espacio</p>
+                            
+                            <div class="medidas-container">
+                                <div class="medida-input">
+                                    <label for="largo">Largo (cm)</label>
+                                    <div class="medida-control">
+                                        <button class="medida-btn decrement" data-medida="largo">-</button>
+                                        <input type="number" id="largo" name="largo" value="180" min="60" max="300" step="5">
+                                        <button class="medida-btn increment" data-medida="largo">+</button>
+                                    </div>
+                                    <div class="medida-rango">
+                                        <input type="range" id="largoRange" min="60" max="300" value="180" step="5">
+                                    </div>
+                                </div>
+                                
+                                <div class="medida-input">
+                                    <label for="ancho">Ancho (cm)</label>
+                                    <div class="medida-control">
+                                        <button class="medida-btn decrement" data-medida="ancho">-</button>
+                                        <input type="number" id="ancho" name="ancho" value="90" min="40" max="150" step="5">
+                                        <button class="medida-btn increment" data-medida="ancho">+</button>
+                                    </div>
+                                    <div class="medida-rango">
+                                        <input type="range" id="anchoRange" min="40" max="150" value="90" step="5">
+                                    </div>
+                                </div>
+                                
+                                <div class="medida-input">
+                                    <label for="alto">Alto (cm)</label>
+                                    <div class="medida-control">
+                                        <button class="medida-btn decrement" data-medida="alto">-</button>
+                                        <input type="number" id="alto" name="alto" value="75" min="40" max="120" step="5">
+                                        <button class="medida-btn increment" data-medida="alto">+</button>
+                                    </div>
+                                    <div class="medida-rango">
+                                        <input type="range" id="altoRange" min="40" max="120" value="75" step="5">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Visualización de medidas -->
+                            <div class="medida-visualizacion">
+                                <div class="visualizacion-titulo">
+                                    <h4>Visualización de medidas</h4>
+                                    <span id="volumenTotal">1.21 m³</span>
+                                </div>
+                                <div class="visualizacion-grafico">
+                                    <div class="grafico-largo" id="graficoLargo"></div>
+                                    <div class="grafico-ancho" id="graficoAncho"></div>
+                                    <div class="grafico-alto" id="graficoAlto"></div>
+                                </div>
+                                <div class="visualizacion-leyenda">
+                                    <div class="leyenda-item">
+                                        <span class="leyenda-color largo-color"></span>
+                                        <span>Largo: <strong id="valorLargo">180 cm</strong></span>
+                                    </div>
+                                    <div class="leyenda-item">
+                                        <span class="leyenda-color ancho-color"></span>
+                                        <span>Ancho: <strong id="valorAncho">90 cm</strong></span>
+                                    </div>
+                                    <div class="leyenda-item">
+                                        <span class="leyenda-color alto-color"></span>
+                                        <span>Alto: <strong id="valorAlto">75 cm</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Guía de medidas -->
+                            <div class="medida-guia">
+                                <h4><i class="fas fa-info-circle"></i> Guía de medidas estándar</h4>
+                                <div class="guia-contenido">
+                                    <p><strong>Comedor (4 personas):</strong> 120x80 cm</p>
+                                    <p><strong>Comedor (6 personas):</strong> 180x90 cm</p>
+                                    <p><strong>Comedor (8 personas):</strong> 220x100 cm</p>
+                                    <p><strong>Altura estándar:</strong> 75 cm</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PASO 4: Acabados y Tratamientos -->
+                        <div class="paso-contenido" data-paso="4">
+                            <h3><i class="fas fa-paint-roller"></i> Acabados y Tratamientos</h3>
+                            <p class="paso-desc">Elige el acabado que mejor proteja y embellezca tu madera</p>
+                            
+                            <div class="acabados-grid">
+                                <div class="acabado-opcion" data-acabado="natural">
+                                    <div class="acabado-muestra natural"></div>
+                                    <h4>Al Natural</h4>
+                                    <p>Barniz incoloro que resalta la veta</p>
+                                    <span class="acabado-precio">+5%</span>
+                                </div>
+                                
+                                <div class="acabado-opcion active" data-acabado="satinado">
+                                    <div class="acabado-muestra satinado"></div>
+                                    <h4>Satinado</h4>
+                                    <p>Brillo suave, resistente a marcas</p>
+                                    <span class="acabado-precio">+10%</span>
+                                </div>
+                                
+                                <div class="acabado-opcion" data-acabado="brillante">
+                                    <div class="acabado-muestra brillante"></div>
+                                    <h4>Brillante</h4>
+                                    <p>Acabado lacado de alto brillo</p>
+                                    <span class="acabado-precio">+15%</span>
+                                </div>
+                                
+                                <div class="acabado-opcion" data-acabado="encerado">
+                                    <div class="acabado-muestra encerado"></div>
+                                    <h4>Encerado</h4>
+                                    <p>Acabado tradicional con cera natural</p>
+                                    <span class="acabado-precio">+12%</span>
+                                </div>
+                                
+                                <div class="acabado-opcion" data-acabado="aceitado">
+                                    <div class="acabado-muestra aceitado"></div>
+                                    <h4>Aceitado</h4>
+                                    <p>Protección profunda, aspecto cálido</p>
+                                    <span class="acabado-precio">+8%</span>
+                                </div>
+                                
+                                <div class="acabado-opcion" data-acabado="pintado">
+                                    <div class="acabado-muestra pintado"></div>
+                                    <h4>Pintado</h4>
+                                    <p>Color sólido, múltiples colores</p>
+                                    <span class="acabado-precio">+20%</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Selector de Color para Pintado -->
+                            <div class="selector-color" id="selectorColor" style="display: none;">
+                                <h4>Selecciona el color</h4>
+                                <div class="colores-grid">
+                                    <div class="color-opcion" data-color="#2C1810" style="background-color: #2C1810;"></div>
+                                    <div class="color-opcion" data-color="#8B5A2B" style="background-color: #8B5A2B;"></div>
+                                    <div class="color-opcion" data-color="#FFFFFF" style="background-color: #FFFFFF; border: 1px solid #ddd;"></div>
+                                    <div class="color-opcion" data-color="#F5F1E8" style="background-color: #F5F1E8;"></div>
+                                    <div class="color-opcion" data-color="#3A506B" style="background-color: #3A506B;"></div>
+                                    <div class="color-opcion" data-color="#1C2541" style="background-color: #1C2541;"></div>
+                                    <div class="color-opcion" data-color="#5BC0BE" style="background-color: #5BC0BE;"></div>
+                                    <div class="color-opcion" data-color="#0B132B" style="background-color: #0B132B;"></div>
+                                </div>
+                                <input type="color" id="colorPersonalizado" value="#2C1810">
+                                <label for="colorPersonalizado" class="color-personalizado-label">
+                                    <i class="fas fa-palette"></i> Color personalizado
+                                </label>
+                            </div>
+                            
+                            <!-- Tratamientos Especiales -->
+                            <div class="tratamientos-especiales">
+                                <h4><i class="fas fa-shield-alt"></i> Tratamientos Especiales</h4>
+                                <div class="tratamientos-grid">
+                                    <label class="tratamiento-opcion">
+                                        <input type="checkbox" name="tratamiento" value="antihumedad">
+                                        <span class="tratamiento-check"></span>
+                                        <span class="tratamiento-texto">
+                                            <strong>Tratamiento antihumedad</strong>
+                                            <small>Protección extra para zonas húmedas</small>
+                                        </span>
+                                        <span class="tratamiento-precio">+8%</span>
+                                    </label>
+                                    
+                                    <label class="tratamiento-opcion">
+                                        <input type="checkbox" name="tratamiento" value="antirayones">
+                                        <span class="tratamiento-check"></span>
+                                        <span class="tratamiento-texto">
+                                            <strong>Protector anti-rayones</strong>
+                                            <small>Resistencia a arañazos y uso diario</small>
+                                        </span>
+                                        <span class="tratamiento-precio">+12%</span>
+                                    </label>
+                                    
+                                    <label class="tratamiento-opcion">
+                                        <input type="checkbox" name="tratamiento" value="uv">
+                                        <span class="tratamiento-check"></span>
+                                        <span class="tratamiento-texto">
+                                            <strong>Protección UV</strong>
+                                            <small>Evita decoloración por sol</small>
+                                        </span>
+                                        <span class="tratamiento-precio">+10%</span>
+                                    </label>
+                                    
+                                    <label class="tratamiento-opcion">
+                                        <input type="checkbox" name="tratamiento" value="antimanchas">
+                                        <span class="tratamiento-check"></span>
+                                        <span class="tratamiento-texto">
+                                            <strong>Repelente de manchas</strong>
+                                            <small>Facilita la limpieza</small>
+                                        </span>
+                                        <span class="tratamiento-precio">+15%</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PASO 5: Extras y Personalización -->
+                        <div class="paso-contenido" data-paso="5">
+                            <h3><i class="fas fa-star"></i> Extras y Detalles Finales</h3>
+                            <p class="paso-desc">Añade esos detalles que hacen única tu pieza</p>
+                            
+                            <!-- Detalles de Diseño -->
+                            <div class="extras-diseno">
+                                <h4><i class="fas fa-pencil-ruler"></i> Detalles de Diseño</h4>
+                                <div class="detalles-grid">
+                                    <label class="detalle-opcion">
+                                        <input type="checkbox" name="detalle" value="bordes-redondeados">
+                                        <span class="detalle-check"></span>
+                                        <span class="detalle-texto">
+                                            <strong>Bordes redondeados</strong>
+                                            <small>Seguridad y diseño suave</small>
+                                        </span>
+                                        <span class="detalle-precio">+5%</span>
+                                    </label>
+                                    
+                                    <label class="detalle-opcion">
+                                        <input type="checkbox" name="detalle" value="patas-metalicas">
+                                        <span class="detalle-check"></span>
+                                        <span class="detalle-texto">
+                                            <strong>Patas metálicas</strong>
+                                            <small>Acero o hierro forjado</small>
+                                        </span>
+                                        <span class="detalle-precio">+15%</span>
+                                    </label>
+                                    
+                                    <label class="detalle-opcion">
+                                        <input type="checkbox" name="detalle" value="cajones">
+                                        <span class="detalle-check"></span>
+                                        <span class="detalle-texto">
+                                            <strong>Cajones incorporados</strong>
+                                            <small>Número de cajones personalizable</small>
+                                        </span>
+                                        <span class="detalle-precio">+20%</span>
+                                    </label>
+                                    
+                                    <label class="detalle-opcion">
+                                        <input type="checkbox" name="detalle" value="vitrina">
+                                        <span class="detalle-check"></span>
+                                        <span class="detalle-texto">
+                                            <strong>Vitrina con cristal</strong>
+                                            <small>Exhibición de objetos decorativos</small>
+                                        </span>
+                                        <span class="detalle-precio">+25%</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Grabado Personalizado -->
+                            <div class="grabado-personalizado">
+                                <h4><i class="fas fa-edit"></i> Grabado Personalizado</h4>
+                                <div class="grabado-contenido">
+                                    <div class="grabado-opciones">
+                                        <label class="grabado-opcion">
+                                            <input type="radio" name="grabado" value="ninguno" checked>
+                                            <span class="grabado-check"></span>
+                                            <span>Sin grabado</span>
+                                        </label>
+                                        
+                                        <label class="grabado-opcion">
+                                            <input type="radio" name="grabado" value="iniciales">
+                                            <span class="grabado-check"></span>
+                                            <span>Iniciales familiares</span>
+                                            <span class="grabado-precio">+8%</span>
+                                        </label>
+                                        
+                                        <label class="grabado-opcion">
+                                            <input type="radio" name="grabado" value="fecha">
+                                            <span class="grabado-check"></span>
+                                            <span>Fecha especial</span>
+                                            <span class="grabado-precio">+5%</span>
+                                        </label>
+                                        
+                                        <label class="grabado-opcion">
+                                            <input type="radio" name="grabado" value="texto">
+                                            <span class="grabado-check"></span>
+                                            <span>Texto personalizado</span>
+                                            <span class="grabado-precio">+12%</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="grabado-input" id="grabadoTexto" style="display: none;">
+                                        <textarea placeholder="Escribe el texto que quieres grabar (máx. 50 caracteres)" maxlength="50"></textarea>
+                                        <div class="grabado-contador">0/50 caracteres</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Tiempo de Entrega -->
+                            <div class="tiempo-entrega">
+                                <h4><i class="fas fa-clock"></i> Tiempo de Fabricación</h4>
+                                <div class="tiempo-opciones">
+                                    <label class="tiempo-opcion">
+                                        <input type="radio" name="tiempo" value="estandar" checked>
+                                        <span class="tiempo-check"></span>
+                                        <div>
+                                            <strong>Entrega Estándar</strong>
+                                            <p>4-6 semanas</p>
+                                            <small>Sin costo adicional</small>
+                                        </div>
+                                    </label>
+                                    
+                                    <label class="tiempo-opcion">
+                                        <input type="radio" name="tiempo" value="express">
+                                        <span class="tiempo-check"></span>
+                                        <div>
+                                            <strong>Entrega Express</strong>
+                                            <p>2-3 semanas</p>
+                                            <small>+25% del valor total</small>
+                                        </div>
+                                    </label>
+                                    
+                                    <label class="tiempo-opcion">
+                                        <input type="radio" name="tiempo" value="urgente">
+                                        <span class="tiempo-check"></span>
+                                        <div>
+                                            <strong>Entrega Urgente</strong>
+                                            <p>7-10 días</p>
+                                            <small>+50% del valor total</small>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controles de Navegación -->
+                        <div class="paso-controls">
+                            <button type="button" class="btn-paso btn-paso-anterior" id="btnAnterior">
+                                <i class="fas fa-arrow-left"></i> Anterior
+                            </button>
+                            
+                            <div class="paso-progreso">
+                                <span class="paso-actual">Paso <span id="pasoActual">1</span>/5</span>
+                                <div class="progreso-bar">
+                                    <div class="progreso-fill" id="progresoFill" style="width: 20%"></div>
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="btn-paso btn-paso-siguiente" id="btnSiguiente">
+                                Siguiente <i class="fas fa-arrow-right"></i>
+                            </button>
+                            
+                            <button type="submit" class="btn-paso btn-finalizar-diseno" id="btnFinalizar" style="display: none;">
+                                <i class="fas fa-check"></i> Finalizar Diseño
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUMEN Y COTIZACIÓN -->
+    <section class="resumen-cotizacion">
+        <div class="container">
+            <div class="resumen-header">
+                <h2><i class="fas fa-file-invoice-dollar"></i> Resumen de tu Diseño</h2>
+                <p>Revisa todos los detalles y obtén tu cotización instantánea</p>
+            </div>
+            
+            <div class="resumen-contenido">
+                <div class="resumen-detalles">
+                    <div class="resumen-seccion">
+                        <h3>Detalles del Mueble</h3>
+                        <div class="detalle-item">
+                            <span class="detalle-label">Tipo:</span>
+                            <span class="detalle-valor" id="resumenTipo">Mesa de Comedor Moderna</span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-label">Madera:</span>
+                            <span class="detalle-valor" id="resumenMadera">Roble</span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-label">Medidas:</span>
+                            <span class="detalle-valor" id="resumenMedidas">180x90x75 cm</span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-label">Acabado:</span>
+                            <span class="detalle-valor" id="resumenAcabado">Satinado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="resumen-seccion">
+                        <h3>Extras Seleccionados</h3>
+                        <div class="extras-lista" id="resumenExtras">
+                            <p class="sin-extras">No hay extras seleccionados</p>
+                        </div>
+                    </div>
+                    
+                    <div class="resumen-seccion">
+                        <h3>Tiempo de Entrega</h3>
+                        <div class="detalle-item">
+                            <span class="detalle-label">Modalidad:</span>
+                            <span class="detalle-valor" id="resumenTiempo">Estándar (4-6 semanas)</span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-label">Fecha estimada:</span>
+                            <span class="detalle-valor" id="resumenFecha">15 de Diciembre, 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resumen-cotizacion-final">
+                    <div class="cotizacion-header">
+                        <h3><i class="fas fa-calculator"></i> Cotización</h3>
+                        <button class="btn-cotizacion-pdf" id="btnPDF">
+                            <i class="fas fa-file-pdf"></i> Descargar PDF
+                        </button>
+                    </div>
+                    
+                    <div class="cotizacion-detalle">
+                        <div class="cotizacion-item">
+                            <span>Mueble base:</span>
+                            <span id="cotizacionBase">$1'800.000</span>
+                        </div>
+                        <div class="cotizacion-item">
+                            <span>Materiales:</span>
+                            <span id="cotizacionMateriales">$450.000</span>
+                        </div>
+                        <div class="cotizacion-item">
+                            <span>Acabados:</span>
+                            <span id="cotizacionAcabados">$180.000</span>
+                        </div>
+                        <div class="cotizacion-item">
+                            <span>Extras:</span>
+                            <span id="cotizacionExtras">$0</span>
+                        </div>
+                        <div class="cotizacion-item cotizacion-descuento">
+                            <span>Descuento por pedido online:</span>
+                            <span id="cotizacionDescuento">-$90.000</span>
+                        </div>
+                        <div class="cotizacion-item cotizacion-total">
+                            <span>Total estimado:</span>
+                            <span id="cotizacionTotal">$2'340.000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cotizacion-notas">
+                        <p><i class="fas fa-info-circle"></i> Esta cotización es una estimación. El precio final se confirmará después de la revisión técnica.</p>
+                        <p><i class="fas fa-truck"></i> El precio no incluye transporte e instalación (consultar según ubicación).</p>
+                        <p><i class="fas fa-shield-alt"></i> Incluye garantía de 2 años por defectos de fabricación.</p>
+                    </div>
+                    
+                    <div class="cotizacion-acciones">
+                        <button class="btn-cotizacion btn-imprimir" id="btnImprimir">
+                            <i class="fas fa-print"></i> Imprimir Cotización
+                        </button>
+                        <button class="btn-cotizacion btn-solicitar" id="btnSolicitar">
+                            <i class="fas fa-paper-plane"></i> Solicitar Cotización Formal
+                        </button>
+                        <a href="https://wa.me/573001234567" class="btn-cotizacion btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS DE DISEÑOS PERSONALIZADOS -->
+    <section class="testimonios-disenos">
+        <div class="container">
+            <div class="testimonios-header">
+                <h2><i class="fas fa-heart"></i> Clientes que diseñaron sus sueños</h2>
+                <p>Historias de éxito con diseños personalizados</p>
+            </div>
+            
+            <div class="testimonios-grid">
+                <div class="testimonio-diseno">
+                    <div class="testimonio-imagen">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="testimonio-contenido">
+                        <h3>Familia Rodríguez</h3>
+                        <p class="testimonio-proyecto">Comedor extensible para 10 personas</p>
+                        <p class="testimonio-texto">"Diseñamos una mesa que se adapta a nuestras reuniones familiares. El proceso fue increíble y el resultado superó todas las expectativas."</p>
+                        <div class="testimonio-detalles">
+                            <span><i class="fas fa-tree"></i> Nogal</span>
+                            <span><i class="fas fa-ruler"></i> 220x100 cm</span>
+                            <span><i class="fas fa-clock"></i> 5 semanas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonio-diseno">
+                    <div class="testimonio-imagen">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="testimonio-contenido">
+                        <h3>Estudio Creativo Luna</h3>
+                        <p class="testimonio-proyecto">Escritorio con almacenamiento integrado</p>
+                        <p class="testimonio-texto">"Necesitábamos un escritorio específico para nuestro espacio. El diseño personalizado resolvió todas nuestras necesidades de almacenamiento."</p>
+                        <div class="testimonio-detalles">
+                            <span><i class="fas fa-tree"></i> Cerezo</span>
+                            <span><i class="fas fa-ruler"></i> 200x80 cm</span>
+                            <span><i class="fas fa-clock"></i> 4 semanas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonio-diseno">
+                    <div class="testimonio-imagen">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <div class="testimonio-contenido">
+                        <h3>Restaurante La Parrilla</h3>
+                        <p class="testimonio-proyecto">Mesas de bar con grabado personalizado</p>
+                        <p class="testimonio-texto">"Las mesas personalizadas se convirtieron en el elemento distintivo de nuestro restaurante. Cada cliente pregunta por ellas."</p>
+                        <div class="testimonio-detalles">
+                            <span><i class="fas fa-tree"></i> Teca</span>
+                            <span><i class="fas fa-ruler"></i> 120x60 cm</span>
+                            <span><i class="fas fa-clock"></i> 6 semanas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL DISEÑA -->
+    <section class="cta-disena">
+        <div class="container">
+            <div class="cta-disena-content">
+                <h2>¿Listo para materializar tu diseño?</h2>
+                <p>Completa el formulario de contacto y un diseñador se pondrá en contacto contigo para revisar todos los detalles</p>
+                <div class="cta-disena-buttons">
+                    <a href="contacto.html" class="btn-cta-disena btn-cta-principal">
+                        <i class="fas fa-envelope"></i>
+                        Contactar Diseñador
+                    </a>
+                    <a href="tel:+573001234567" class="btn-cta-disena btn-cta-secundario">
+                        <i class="fas fa-phone"></i>
+                        Llamar para Asesoría
+                    </a>
+                </div>
+                <div class="cta-info">
+                    <p><i class="fas fa-check-circle"></i> Asesoría gratuita sin compromiso</p>
+                    <p><i class="fas fa-check-circle"></i> Revisión técnica previa a fabricación</p>
+                    <p><i class="fas fa-check-circle"></i> Garantía de satisfacción total</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-tree"></i>
+                        <div>
+                            <span class="logo-name">ARTE<span class="logo-highlight">MADERA</span></span>
+                            <span class="logo-tagline">Ebanistería fina</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Taller especializado en ebanistería artesanal desde 1995. 
+                        Creando piezas únicas con pasión y dedicación.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle del Artesano 123, Ciudad</p>
+                        <p><i class="fas fa-phone"></i> +57 300 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> disenos@artemadera.com</p>
+                        <p><i class="fas fa-clock"></i> Lun-Vie: 8am-6pm | Sáb: 9am-2pm</p>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Diseño Personalizado</h4>
+                    <ul class="footer-links">
+                        <li><a href="disena.html">Diseña tu Pieza</a></li>
+                        <li><a href="proyectos.html">Galería de Proyectos</a></li>
+                        <li><a href="servicios.html">Tipos de Madera</a></li>
+                        <li><a href="servicios.html">Acabados Disponibles</a></li>
+                        <li><a href="contacto.html">Preguntas Frecuentes</a></li>
+                        <li><a href="contacto.html">Agendar Consulta</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ArteMadera Taller de Ebanistería. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE COTIZACIÓN -->
+    <div class="modal-cotizacion" id="modalCotizacion">
+        <div class="modal-contenido">
+            <div class="modal-header">
+                <h3><i class="fas fa-check-circle"></i> ¡Diseño Guardado!</h3>
+                <button class="modal-cerrar" id="modalCerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Tu diseño personalizado ha sido guardado exitosamente.</p>
+                <p>Hemos enviado una copia a tu correo electrónico y un diseñador se pondrá en contacto contigo en las próximas 24 horas.</p>
+                <div class="modal-codigo">
+                    <span>Código de seguimiento:</span>
+                    <strong id="codigoSeguimiento">ARTM-2024-00123</strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-modal btn-modal-secundario" id="btnCerrarModal">
+                    Cerrar
+                </button>
+                <a href="contacto.html" class="btn-modal btn-modal-principal">
+                    <i class="fas fa-comments"></i>
+                    Hablar con Diseñador
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="disena.js"></script>
+</body>
+</html>

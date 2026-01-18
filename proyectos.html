@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Proyectos | ArteMadera Ebanistería</title>
+    <link rel="stylesheet" href="proyectos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- BOTONES FLOTANTES -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/573001234567" class="floating-btn whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/taller_ebanisteria" class="floating-btn instagram-btn" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="tel:+573001234567" class="floating-btn phone-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo-elegante">
+                    <div class="logo-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">ARTE<span class="logo-accent">MADERA</span></span>
+                        <span class="logo-sub">Taller de Ebanistería</span>
+                    </div>
+                </a>
+
+                <div class="nav-elegante">
+                    <a href="index.html" class="nav-item">
+                        <span class="nav-text">INICIO</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="nosotros.html" class="nav-item">
+                        <span class="nav-text">NOSOTROS</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="servicios.html" class="nav-item">
+                        <span class="nav-text">SERVICIOS</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="proyectos.html" class="nav-item active">
+                        <span class="nav-text">PROYECTOS</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="tienda.html" class="nav-item">
+                        <span class="nav-text">TIENDA</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="contacto.html" class="nav-item">
+                        <span class="nav-text">CONTACTO</span>
+                        <span class="nav-line"></span>
+                    </a>
+                    <a href="disena.html" class="nav-item nav-special">
+                        <span class="nav-text">DISEÑA TU PIEZA</span>
+                        <span class="nav-line"></span>
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu-elegante" id="mobileMenu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <i class="fas fa-tree"></i>
+                    <span>ARTEMADERA</span>
+                </div>
+                <button class="close-menu" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="mobile-nav-items">
+                <a href="index.html" class="mobile-nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>INICIO</span>
+                </a>
+                <a href="nosotros.html" class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>NOSOTROS</span>
+                </a>
+                <a href="servicios.html" class="mobile-nav-item">
+                    <i class="fas fa-tools"></i>
+                    <span>SERVICIOS</span>
+                </a>
+                <a href="proyectos.html" class="mobile-nav-item active">
+                    <i class="fas fa-images"></i>
+                    <span>PROYECTOS</span>
+                </a>
+                <a href="tienda.html" class="mobile-nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>TIENDA</span>
+                </a>
+                <a href="contacto.html" class="mobile-nav-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>CONTACTO</span>
+                </a>
+                <a href="disena.html" class="mobile-nav-item mobile-special">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <span>DISEÑA TU PIEZA</span>
+                </a>
+            </div>
+            
+            <div class="mobile-contact-info">
+                <a href="tel:+573001234567" class="mobile-phone">
+                    <i class="fas fa-phone"></i>
+                    +57 300 123 4567
+                </a>
+                <a href="https://wa.me/573001234567" class="mobile-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO PROYECTOS -->
+    <section class="hero-proyectos">
+        <div class="container">
+            <div class="hero-proyectos-content">
+                <h1>Nuestros Proyectos</h1>
+                <p>Descubre nuestra galería de trabajos realizados</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Inicio</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <span class="current">Proyectos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTROS PROYECTOS -->
+    <section class="filtros-proyectos">
+        <div class="container">
+            <div class="filtros-container">
+                <div class="filtros-header">
+                    <h3>Filtrar por categoría</h3>
+                    <button class="btn-filtro-clear" id="limpiarFiltros">Limpiar filtros</button>
+                </div>
+                
+                <div class="filtros-categorias">
+                    <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                    <button class="filtro-btn" data-categoria="cocinas">Cocinas</button>
+                    <button class="filtro-btn" data-categoria="dormitorios">Dormitorios</button>
+                    <button class="filtro-btn" data-categoria="living">Living</button>
+                    <button class="filtro-btn" data-categoria="oficinas">Oficinas</button>
+                    <button class="filtro-btn" data-categoria="restauracion">Restauración</button>
+                    <button class="filtro-btn" data-categoria="comercial">Comercial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE PROYECTOS -->
+    <section class="galeria-proyectos">
+        <div class="container">
+            <div class="proyectos-grid" id="proyectosGrid">
+                <!-- Proyecto 1 - Cocina -->
+                <div class="proyecto-item" data-categoria="cocinas">
+                    <div class="proyecto-imagen">
+                        <div class="placeholder-image">
+                            <i class="fas fa-utensils"></i>
+                            <p>Cocina Integral</p>
+                        </div>
+                        <div class="proyecto-overlay">
+                            <span class="categoria-badge">Cocina</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Cocina Integral en Roble</h3>
+                        <p class="proyecto-desc">Diseño moderno con isla central y acabados en roble macizo.</p>
+                        <div class="proyecto-detalles">
+                            <span><i class="fas fa-ruler"></i> 25m²</span>
+                            <span><i class="fas fa-clock"></i> 6 semanas</span>
+                            <span><i class="fas fa-tree"></i> Roble</span>
+                        </div>
+                        <a href="#" class="btn-proyecto-detalle">
+                            <i class="fas fa-eye"></i>
+                            Ver detalles
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 - Dormitorio -->
+                <div class="proyecto-item" data-categoria="dormitorios">
+                    <div class="proyecto-imagen">
+                        <div class="placeholder-image">
+                            <i class="fas fa-bed"></i>
+                            <p>Dormitorio Principal</p>
+                        </div>
+                        <div class="proyecto-overlay">
+                            <span class="categoria-badge">Dormitorio</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Dormitorio Principal</h3>
+                        <p class="proyecto-desc">Clóset empotrado y cabecera a medida en nogal americano.</p>
+                        <div class="proyecto-detalles">
+                            <span><i class="fas fa-ruler"></i> 18m²</span>
+                            <span><i class="fas fa-clock"></i> 4 semanas</span>
+                            <span><i class="fas fa-tree"></i> Nogal</span>
+                        </div>
+                        <a href="#" class="btn-proyecto-detalle">
+                            <i class="fas fa-eye"></i>
+                            Ver detalles
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 - Restauración -->
+                <div class="proyecto-item" data-categoria="restauracion">
+                    <div class="proyecto-imagen">
+                        <div class="placeholder-image">
+                            <i class="fas fa-history"></i>
+                            <p>Mesa Antigua</p>
+                        </div>
+                        <div class="proyecto-overlay">
+                            <span class="categoria-badge">Restauración</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Restauración Mesa Familiar</h3>
+                        <p class="proyecto-desc">Mesa de 1920 recuperada con técnicas tradicionales.</p>
+                        <div class="proyecto-detalles">
+                            <span><i class="fas fa-history"></i> 1920</span>
+                            <span><i class="fas fa-clock"></i> 3 semanas</span>
+                            <span><i class="fas fa-tree"></i> Caoba</span>
+                        </div>
+                        <a href="#" class="btn-proyecto-detalle">
+                            <i class="fas fa-eye"></i>
+                            Ver detalles
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 - Oficina -->
+                <div class="proyecto-item" data-categoria="oficinas">
+                    <div class="proyecto-imagen">
+                        <div class="placeholder-image">
+                            <i class="fas fa-briefcase"></i>
+                            <p>Oficina Ejecutiva</p>
+                        </div>
+                        <div class="proyecto-overlay">
+                            <span class="categoria-badge">Oficina</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Oficina Ejecutiva</h3>
+                        <p class="proyecto-desc">Mobiliario completo para oficina corporativa.</p>
+                        <div class="proyecto-detalles">
+                            <span><i class="fas fa-ruler"></i> 35m²</span>
+                            <span><i class="fas fa-clock"></i> 8 semanas</span>
+                            <span><i class="fas fa-tree"></i> Cerezo</span>
+                        </div>
+                        <a href="#" class="btn-proyecto-detalle">
+                            <i class="fas fa-eye"></i>
+                            Ver detalles
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 - Living -->
+                <div class="proyecto-item" data-categoria="living">
+                    <div class="proyecto-imagen">
+                        <div class="placeholder-image">
+                            <i class="fas fa-couch"></i>
+                            <p>Living Comedor</p>
+                        </div>
+                        <div class="proyecto-overlay">
+                            <span class="categoria-badge">Living</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Living Comedor Integral</h3>
+                        <p class="proyecto-desc">Muebles a medida para área social completa.</p>
+                        <div class="proyecto-detalles">
+                            <span><i class="fas fa-ruler"></i> 40m²</span>
+                            <span><i class="fas fa-clock"></i> 10 semanas</span>
+                            <span><i class="fas fa-tree"></i> Teca</span>
+                        </div>
+                        <a href="#" class="btn-proyecto-detalle">
+                            <i class="fas fa-eye"></i>
+                            Ver detalles
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 - Comercial -->
+                <div class="proyecto-item" data-categoria="comercial">
+                    <div class="proyecto-imagen">
+                        <div class="placeholder-image">
+                            <i class="fas fa-store"></i>
+                            <p>Local Comercial</p>
+                        </div>
+                        <div class="proyecto-overlay">
+                            <span class="categoria-badge">Comercial</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Tienda de Diseño</h3>
+                        <p class="proyecto-desc">Mobiliario comercial para boutique de diseño.</p>
+                        <div class="proyecto-detalles">
+                            <span><i class="fas fa-ruler"></i> 60m²</span>
+                            <span><i class="fas fa-clock"></i> 12 semanas</span>
+                            <span><i class="fas fa-tree"></i> Olivo</span>
+                        </div>
+                        <a href="#" class="btn-proyecto-detalle">
+                            <i class="fas fa-eye"></i>
+                            Ver detalles
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cargar-mas-container">
+                <button class="btn-cargar-mas" id="cargarMasProyectos">
+                    <span>Cargar más proyectos</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS PROYECTOS -->
+    <section class="testimonios-proyectos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">EXPERIENCIAS</span>
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="testimonios-grid">
+                <div class="testimonio-proyecto">
+                    <div class="testimonio-content">
+                        <p>"La cocina que diseñaron para nosotros superó todas nuestras expectativas. El equipo fue profesional y el resultado es espectacular."</p>
+                    </div>
+                    <div class="testimonio-cliente">
+                        <div class="cliente-avatar">MG</div>
+                        <div class="cliente-info">
+                            <h4>María González</h4>
+                            <span>Proyecto: Cocina Integral</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonio-proyecto">
+                    <div class="testimonio-content">
+                        <p>"Recuperaron una mesa familiar que tenía más de 100 años. El trabajo fue impecable y respetaron completamente su esencia."</p>
+                    </div>
+                    <div class="testimonio-cliente">
+                        <div class="cliente-avatar">CR</div>
+                        <div class="cliente-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <span>Proyecto: Restauración</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA PROYECTOS -->
+    <section class="cta-proyectos">
+        <div class="container">
+            <div class="cta-proyectos-content">
+                <h2>¿Te gustó nuestro trabajo?</h2>
+                <p>Cuéntanos tu idea y crearemos algo extraordinario para ti.</p>
+                <div class="cta-buttons">
+                    <a href="disena.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-pencil-ruler"></i>
+                        Diseña tu proyecto
+                    </a>
+                    <a href="contacto.html" class="btn btn-outline">
+                        Solicitar presupuesto
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-tree"></i>
+                        <div>
+                            <span class="logo-name">ARTE<span class="logo-highlight">MADERA</span></span>
+                            <span class="logo-tagline">Ebanistería fina</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Taller especializado en ebanistería artesanal desde 1995. 
+                        Creando piezas únicas con pasión y dedicación.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle del Artesano 123, Ciudad</p>
+                        <p><i class="fas fa-phone"></i> +57 300 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@artemadera.com</p>
+                        <p><i class="fas fa-clock"></i> Lun-Vie: 8am-6pm | Sáb: 9am-2pm</p>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Categorías</h4>
+                    <ul class="footer-links">
+                        <li><a href="proyectos.html">Cocinas</a></li>
+                        <li><a href="proyectos.html">Dormitorios</a></li>
+                        <li><a href="proyectos.html">Living</a></li>
+                        <li><a href="proyectos.html">Oficinas</a></li>
+                        <li><a href="proyectos.html">Restauración</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ArteMadera Taller de Ebanistería. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DETALLE PROYECTO -->
+    <div class="modal-proyecto" id="modalProyecto">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitulo">Detalles del Proyecto</h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <!-- Contenido dinámico -->
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
