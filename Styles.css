@@ -123,6 +123,7 @@ body {
     text-decoration: none;
     gap: 15px;
     transition: transform 0.3s ease;
+    transform: translateX(-50px); /* ← ESTE ES EL MEJOR */
 }
 
 .logo-elegante:hover {
