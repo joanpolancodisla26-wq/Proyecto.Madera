@@ -10,10 +10,14 @@
 </head>
 <body>
     <!-- BOTONES FLOTANTES ABAJO -->
-    <div class="floating-buttons">
-        <a href="https://wa.me/573001234567" class="floating-btn whatsapp-btn" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+     <div class="floating-buttons">
+    <!-- WhatsApp SIEMPRE visible -->
+    <a href="https://wa.me/573001234567" class="floating-btn whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Instagram y Teléfono OCULTOS hasta hover -->
+    <div class="hidden-buttons">
         <a href="https://instagram.com/taller_ebanisteria" class="floating-btn instagram-btn" target="_blank">
             <i class="fab fa-instagram"></i>
         </a>
@@ -21,6 +25,7 @@
             <i class="fas fa-phone"></i>
         </a>
     </div>
+</div>
 
     <!-- HEADER ELEGANTE -->
 <header class="main-header">
@@ -32,7 +37,7 @@
                     <i class="fas fa-tree"></i>
                 </div>
                 <div class="logo-text">
-                    <span class="logo-main">ARTE &<span class="logo-accent">MADERA</span></span>
+                    <span class="logo-main">Artisan Wood<span class="logo-accent"></span></span>
                     <span class="logo-sub">Taller de Ebanistería</span>
                 </div>
             </a>
@@ -391,9 +396,10 @@
             </div>
             
             <div class="proyectos-grid">
+                <!-- PROYECTO 1 -->
                 <div class="proyecto-card">
-                    <div class="proyecto-image">
-                        <div class="image-overlay">
+                    <div class="proyecto-image proyecto 1">
+                        <div class="img-overlay">
                             <span class="categoria">Cocina integral</span>
                         </div>
                     </div>
@@ -403,7 +409,7 @@
                         <a href="proyectos.html" class="proyecto-link">Ver proyecto completo</a>
                     </div>
                 </div>
-                
+                          <!-- PROYECTO 2 -->
                 <div class="proyecto-card">
                     <div class="proyecto-image">
                         <div class="image-overlay">
@@ -416,7 +422,7 @@
                         <a href="proyectos.html" class="proyecto-link">Ver proyecto completo</a>
                     </div>
                 </div>
-                
+                        <!-- PROYECTO 3 -->
                 <div class="proyecto-card">
                     <div class="proyecto-image">
                         <div class="image-overlay">
@@ -640,7 +646,57 @@
     </button>
 
     <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+    // 2. Inicialización corregida
+    const SUPABASE_URL = 'https://befruxcpkvfrihwokmxi.supabase.co';
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJlZnJ1eGNwa3Zmcmlod29rbXhpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAyNDQzMzksImV4cCI6MjA4NTgyMDMzOX0.RhlHsU5sxBKnFn0gPguSimdiO-mp_arsl12pO5hUTt4'; // Usa la clave larga que empieza por "eyJ..."
+    
+    // Cambiado de lib.supabase a supabase.createClient
+    const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    const form = document.getElementById('testimonioForm');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Extraer valores asegurando que los IDs existan
+        const nombreInput = form.querySelector('input[type="text"]');
+        const comentarioInput = form.querySelector('textarea');
+        const ratingInput = document.getElementById('ratingValue');
+
+        const nombre = nombreInput ? nombreInput.value : '';
+        const comentario = comentarioInput ? comentarioInput.value : '';
+        const calificacion = ratingInput ? parseInt(ratingInput.value) : 5;
+
+        try {
+            const { data, error } = await _supabase
+                .from('Testimonios') 
+                .insert([
+                    { 
+                        Nombre: nombre, 
+                        Comentario: comentario, 
+                        Calificacion: calificacion,
+                        Fecha: new Date().toISOString().split('T')[0] 
+                    }
+                ]);
+
+            if (error) throw error;
+
+            alert('¡Testimonio enviado con éxito!');
+            form.reset();
+            
+            // Si tienes estrellas visuales, recuerda resetear su clase CSS aquí
+            
+        } catch (error) {
+            console.error('Error detallado:', error);
+            alert('Error: ' + (error.message || 'No se pudo conectar con la base de datos'));
+        }
+    });
+</script>
 
 </body>
 </html>
